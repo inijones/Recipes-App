@@ -10,7 +10,7 @@
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		oG5/OGn+vw7vp/nu5DUDoZJ4nFc=
+		ilTGX1bEyw7ApAxBQLdO0vP3VSU=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -18,7 +18,47 @@
 		</data>
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
-		xTv4xP8BcRwkPdryaG5ai9porwI=
+		5nTJxSHaHa8GnDSJFGYikqtXM1g=
+		</data>
+		<key>flutter_assets/assets/images/dismiss.svg</key>
+		<data>
+		NeYquaLmMZBiHepc0cqAGn2q12o=
+		</data>
+		<key>flutter_assets/assets/images/empty_bookmarks.svg</key>
+		<data>
+		3RfTRp0m7ZAZxmiZZ7zB23jHDGE=
+		</data>
+		<key>flutter_assets/assets/images/empty_shopping.svg</key>
+		<data>
+		fq9ygtbNV9UGp+MgMQfhMXDLixM=
+		</data>
+		<key>flutter_assets/assets/images/icon_bookmark.svg</key>
+		<data>
+		wHoPJxCtiyLeZ36UomBETPsPEpY=
+		</data>
+		<key>flutter_assets/assets/images/icon_bookmarks.svg</key>
+		<data>
+		jtPOGeyfgaSiMI3ZA1zaNSP6mj4=
+		</data>
+		<key>flutter_assets/assets/images/icon_recipe.svg</key>
+		<data>
+		uxnkE/zhiD9xNcoL0mqYysPUudI=
+		</data>
+		<key>flutter_assets/assets/images/icon_shopping_list.svg</key>
+		<data>
+		3RM8/6J3aNmIPCeCQtW4N6oPEfQ=
+		</data>
+		<key>flutter_assets/assets/images/pizza_w700.png</key>
+		<data>
+		Lo/FW6Bl/Nl3llTv/puyXFgYYjI=
+		</data>
+		<key>flutter_assets/assets/recipes1.json</key>
+		<data>
+		jcRHz9JAfoJGqbop41CcUSMXMP4=
+		</data>
+		<key>flutter_assets/assets/recipes2.json</key>
+		<data>
+		ZzhEspL2f3Ct/lnIqKc0GD/Jnhg=
 		</data>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
@@ -30,7 +70,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		B/OOyowm8UCU4lyoRpqEcQy1G9E=
+		4YDLUIsYV9KevH+9ngfkSLDhRQw=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -51,7 +91,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sps95+7JukayebvM0TLjL1LW1VXXndpKp/O8tOm9ZR8=
+			Ym7rGrar5cqtrqktbVYM5fb1U4x4eGPQ1Bc1Z0MoDw0=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -65,7 +105,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cFYWQ+t+cN5QBkoNHcEHdDj70uBENdQC3V0Bz7yleBA=
+			EYqSW7vygc6VX8FpjFXIiPdhv+dxv8HQhrRGWH3BkD4=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/dismiss.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EqfQLdO2382jHSGgWYkw6i4HaLlmvFkhsIbXt1HLlL4=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/empty_bookmarks.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			i3Iano3XJPic9yJZK/o2zkFKtCZqnIiMc561DMc79GY=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/empty_shopping.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tK2ee/jIVCGNJ7FgGlXZdFIl/AYROD+mmlYiCq2/KJ0=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/icon_bookmark.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xRshjKXeffkJ24RFrw+8HgzHRz9P2AmFrNBGz/3jKwk=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/icon_bookmarks.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nOsxH2zq7Vj5jknIt2Ctfo8Wv2RGLEORJPylc1nJOsY=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/icon_recipe.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vfX/6gXnc+3DsOKs/h+M28oM10OGIa3EFvPT/25PTM0=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/icon_shopping_list.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			k7MZX+rw33rWq4jTYZdkAOs1UATQyNCRTAyAnzBoNyM=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/pizza_w700.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			47evx2aJEsBNxnCo2/pVWjgQAf3duvy3OPTkCoOtRDY=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/recipes1.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			P6LEM75N36mZwvgN3cCSS6dFEtZKhDRxIFmOdTyhVY0=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/recipes2.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			G2oWhrXdsce+8h0axVRphYlV7DiVEbEziigdYKu8ypc=
 			</data>
 		</dict>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
@@ -86,7 +196,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jVJ7u4HV1kyJPctSjPY3/e96zHP45Aqfi0B64/AropM=
+			yrXOvxQyPdImJz/1LT3450HKROIGT6pAK+y3+3+qQGo=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
