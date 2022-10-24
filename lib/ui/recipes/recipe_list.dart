@@ -100,40 +100,43 @@ class _RecipeListState extends State<RecipeList> {
           Radius.circular(8.0),
         ),
       ),
-      child: Row(
-        children: [
-          // Replace
-          const Icon(Icons.search),
-          const SizedBox(width: 6.0),
-          Expanded(
-            child: Row(
-              children: <Widget>[
-                Expanded(
-                  child: TextField(
-                    decoration: const InputDecoration(
-                      border: InputBorder.none,
-                      hintText: 'Search',
+      child: Padding(
+        padding: const EdgeInsets.all(4.0),
+        child: Row(
+          children: [
+            // Replace
+            const Icon(Icons.search),
+            const SizedBox(width: 6.0),
+            Expanded(
+              child: Row(
+                children: <Widget>[
+                  Expanded(
+                    child: TextField(
+                      decoration: const InputDecoration(
+                        border: InputBorder.none,
+                        hintText: 'Search',
+                      ),
+                      autofocus: false,
+                      controller: searchTextController,
+                      onChanged: (query) => {
+                        if (query.length >= 3)
+                          {
+                            // Rebuild List
+                            setState(() {
+                              currentSearchList.clear();
+                              currentCount = 0;
+                              currentEndPosition = pageCount;
+                              currentStartPosition = 0;
+                            })
+                          }
+                      },
                     ),
-                    autofocus: false,
-                    controller: searchTextController,
-                    onChanged: (query) => {
-                      if (query.length >= 3)
-                        {
-                          // Rebuild List
-                          setState(() {
-                            currentSearchList.clear();
-                            currentCount = 0;
-                            currentEndPosition = pageCount;
-                            currentStartPosition = 0;
-                          })
-                        }
-                    },
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
