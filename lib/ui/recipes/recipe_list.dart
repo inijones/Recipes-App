@@ -45,7 +45,8 @@ class _RecipeListState extends State<RecipeList> {
           setState(() {
             loading = true;
             currentStartPosition = currentEndPosition;
-            currentEndPosition = min(currentStartPosition + pageCount, currentCount)
+            currentEndPosition =
+                min(currentStartPosition + pageCount, currentCount);
           });
         }
       }
@@ -66,13 +67,90 @@ class _RecipeListState extends State<RecipeList> {
   void getPreviousSearches() async {
     final prefs = await SharedPreferences.getInstance();
     if (prefs.containsKey(prefSearchKey)) {
-      final searches = prefs.getString(prefSearchKey);
-      if (searches != null) {}
+      final searches = prefs.getStringList(prefSearchKey);
+      if (searches != null) {
+        previousSearches = searches;
+      } else {
+        previousSearches = <String>[];
+      }
     }
   }
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      color: Colors.white,
+      child: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          children: <Widget>[
+            _buildSearchCard(),
+            _buildRecipeLoader(context),
+          ],
+        ),
+      ),
+    );
   }
+
+  Widget _buildSearchCard() {
+    return Card(
+      elevation: 4,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.all(
+          Radius.circular(8.0),
+        ),
+      ),
+      child: Row(
+        children: [
+          // Replace
+          const Icon(Icons.search),
+          const SizedBox(width: 6.0),
+          Expanded(
+            child: Row(
+              children: <Widget>[
+                Expanded(
+                  child: TextField(
+                    decoration: const InputDecoration(
+                      border: InputBorder.none,
+                      hintText: 'Search',
+                    ),
+                    autofocus: false,
+                    controller: searchTextController,
+                    onChanged: (query) => {
+                      if (query.length >= 3)
+                        {
+                          // Rebuild List
+                          setState(() {
+                            currentSearchList.clear();
+                            currentCount = 0;
+                            currentEndPosition = pageCount;
+                            currentStartPosition = 0;
+                          })
+                        }
+                    },
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  // TODO: Add startSearch
+
+  // TODO: Replce method
+  Widget _buildRecipeLoader(BuildContext context) {
+    if (searchTextController.text.length < 3) {
+      return Container();
+    }
+
+    // show a loading indicator while waiting for the movies
+    return const Center(
+      child: CircularProgressIndicator(),
+    );
+  }
+
+  // TODO: Add buildRecipeCard
 }
