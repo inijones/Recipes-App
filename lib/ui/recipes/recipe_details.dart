@@ -53,6 +53,13 @@ class RecipeDetails extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 16.0),
+                const Padding(
+                  padding: EdgeInsets.only(left: 16.0),
+                  child: Chip(
+                    label: Text("16CAL"),
+                  ),
+                ),
+                const SizedBox(height: 16.0),
                 Center(
                   child: ElevatedButton.icon(
                     style: ElevatedButton.styleFrom(

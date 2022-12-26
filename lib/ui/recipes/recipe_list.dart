@@ -20,7 +20,7 @@ class _RecipeListState extends State<RecipeList> {
   int currentStartPosition = 0;
   int currentEndPosition = 20;
   int pageCount = 20;
-  bool hasMore = true;
+  bool hasMore = false;
   bool loading = false;
   bool inErrorState = false;
   List<String> previousSearches = <String>[];
@@ -33,24 +33,26 @@ class _RecipeListState extends State<RecipeList> {
     // TODO: Call loadRecipes()
     getPreviousSearches();
     searchTextController = TextEditingController(text: '');
-    _scrollController.addListener(() {
-      final triggerFetchMoreSize =
-          0.7 * _scrollController.position.maxScrollExtent;
+    _scrollController.addListener(
+      () {
+        final triggerFetchMoreSize =
+            0.7 * _scrollController.position.maxScrollExtent;
 
-      if (_scrollController.position.pixels > triggerFetchMoreSize) {
-        if (hasMore &&
-            currentEndPosition < currentCount &&
-            !loading &&
-            !inErrorState) {
-          setState(() {
-            loading = true;
-            currentStartPosition = currentEndPosition;
-            currentEndPosition =
-                min(currentStartPosition + pageCount, currentCount);
-          });
+        if (_scrollController.position.pixels > triggerFetchMoreSize) {
+          if (hasMore &&
+              currentEndPosition < currentCount &&
+              !loading &&
+              !inErrorState) {
+            setState(() {
+              loading = true;
+              currentStartPosition = currentEndPosition;
+              currentEndPosition =
+                  min(currentStartPosition + pageCount, currentCount);
+            });
+          }
         }
-      }
-    });
+      },
+    );
   }
 
   @override
